@@ -1,101 +1,98 @@
-import Image from "next/image";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
 
-export default function Home() {
+export const metadata = {
+  title: 'A Mudança Que Você Precisa',
+  description: 'Uma mensagem especial para você',
+}
+
+export default function DigitalFlyer() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-gray-50 p-6 flex items-center justify-center">
+      <div className="min-w-lg">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <header className="text-center mb-6">
+          <h1 className="text-xl font-bold text-gray-800">A Mudança Que Você Precisa</h1>
+          <p className="text-gray-500 italic">Uma mensagem especial para você</p>
+        </header>
+
+        <main className="space-y-6 text-gray-700 leading-relaxed">
+          <section>
+            <p>
+              Já se sentiu perdido, sem direção, ou sem esperança? A vida, às vezes, pode ser desafiadora, mas quero compartilhar algo que pode mudar completamente a sua realidade.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-gray-800">O Que é a Salvação?</h2>
+            <p>
+              Salvação é ser resgatado do pecado e da morte eterna, recebendo uma nova vida cheia de propósito e paz. É a chance de recomeçar, deixando para trás as amarras do passado.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-gray-800">Por Que Jesus?</h2>
+            <p>
+              Jesus, o Filho de Deus, veio ao mundo para nos salvar. Ele viveu sem falhas, sacrificou-se por nós na cruz e ressuscitou, abrindo o caminho para a vida eterna. Ele é o único que pode nos reconectar com Deus.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-gray-800">Como Receber a Salvação?</h2>
+            <ol className="list-decimal list-inside pl-4 space-y-2">
+              <li>Reconheça que precisa de um Salvador. Todos nós somos imperfeitos.</li>
+              <li>Creia que Jesus é o Filho de Deus e que Ele morreu e ressuscitou por você.</li>
+              <li>Convide Jesus para entrar em seu coração e transformar sua vida.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-gray-800">Versículos Que Transformam</h2>
+            <div className="bg-gray-100 p-4 rounded-md">
+              <p className="italic text-gray-600">&quot;Porque Deus amou o mundo de tal maneira que deu o Seu Filho unigênito, para que todo aquele que Nele crê não pereça, mas tenha a vida eterna.&quot; (João 3:16)</p>
+            </div>
+            <div className="bg-gray-100 p-4 rounded-md mt-4">
+              <p className="italic text-gray-600">&quot;Eu sou o caminho, a verdade e a vida. Ninguém vem ao Pai, senão por mim.&quot; (João 14:6)</p>
+            </div>
+            <div className="bg-gray-100 p-4 rounded-md mt-4">
+              <p className="italic text-gray-600">&quot;Pois o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna em Cristo Jesus, nosso Senhor.&quot; (Romanos 6:23)</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-gray-800">Depois da Salvação</h2>
+            <p>
+              Ao aceitar Jesus, sua jornada será transformada. O Espírito Santo te guiará, te fortalecerá e dará um propósito renovado para a sua vida.
+            </p>
+          </section>
+
+          <section>
+            <p>
+              Não deixe para depois. Jesus está pronto para agir em sua vida a partir agora. Tudo o que Ele precisa é que você abra seu coração e confesse que é um pecador, pedindo perdão e que necessita da presença dele em sua vida.
+            </p>
+          </section>
+        </main>
+
+        <footer className="mt-6 text-center">
+            <a href="https://wa.me/55199130543" target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center gap-2 m-auto mb-8 border py-2 px-6 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors duration-10  0">
+              <Avatar className="transform hover:scale-110 transition-transform duration-300">
+              <AvatarImage src="/foto.jpg" alt="Foto" className="object-cover object-top" />
+              <AvatarFallback>S</AvatarFallback>
+              </Avatar>
+              <div>
+              <p className="text-gray-700">
+                Preciso conversar!
+              </p>
+              </div>
+            </button>
+            </a>
+          <p className="text-gray-500 text-sm">Desenvolvido pela Mocidade da Igreja Batista Bíblica Fundamentalista de Canoas.</p>
+        </footer>
+      </div>
     </div>
-  );
+  )
 }
