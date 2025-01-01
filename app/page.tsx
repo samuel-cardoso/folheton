@@ -77,7 +77,7 @@ export default function DigitalFlyer() {
         </main>
 
         <footer className="mt-6 text-center">
-            <a href="https://wa.me/55199130543" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/555199130543" target="_blank" rel="noopener noreferrer">
             <button className="flex items-center gap-2 m-auto mb-8 border py-2 px-6 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors duration-10  0">
               <Avatar className="transform hover:scale-110 transition-transform duration-300">
               <AvatarImage src="/foto.jpg" alt="Foto" className="object-cover object-top" />
