@@ -143,15 +143,6 @@ export default function BrochureChange() {
 
           {/* Área de Contribuição */}
           <div className="mt-6 p-4 bg-gray-100 rounded-md">
-            <h2 className="text-lg font-semibold text-gray-800">
-              Contribua com a Obra de Deus
-            </h2>
-            <p className="text-gray-600 mt-2">
-              Se sentir no coração, você pode contribuir via Pix:
-            </p>
-            <p className="text-gray-900 font-semibold mt-1">
-              mocidadeibbf@gmail.com
-            </p>
             <p className="text-gray-600 mt-4">Visite nossa igreja:</p>
             <a
               href="https://www.google.com/maps/dir//R.+Benjamin+Franklin,+73+-+Harmonia,+Canoas+-+RS,+92310-380/@-29.9167911,-51.2361126,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95197ab15567a83b:0xd5aba15b41c1ccf8!2m2!1d-51.1949131!2d-29.9168719!3e0?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D"
